@@ -8,13 +8,14 @@
   grid-template-columns: 1fr 1fr;
   text-align: center;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 0;
   gap: 20px;
 }
 
-.vantagens-bg h1 {
-  padding-top: 80px;
+.vantagens-bg h2 {
+  padding-top: 60px;
+  padding-bottom: 0;
   text-align: center;
 }
 

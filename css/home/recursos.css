@@ -12,8 +12,9 @@
   gap: 20px;
 }
 
-.recursos-bg h1 {
-  padding-top: 80px;
+.recursos-bg h2 {
+  padding-top: 60px;
+  padding-bottom: 0;
   text-align: center;
 }
 

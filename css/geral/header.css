@@ -54,3 +54,97 @@
   }
 }
 
+
+/*********************************************************/
+/*menu mobile*/
+#btn_mobile {
+  display: none;
+}
+
+@media (max-width: 600px){
+
+  #menu {
+    display: block;
+    position: absolute;
+    top: 100px;
+    background: var(--cor-s1);
+    width: 100%;
+    right: 0px;
+    height: 0px;
+    transition: .6s; 
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y:hidden;
+  }
+
+  #nav.active #menu { /*mostra menu quando clica no botao*/
+    height: 100vh;
+    visibility: visible;
+    overflow-y:auto;
+  }
+
+  #menu li {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.096);
+  }
+
+  #menu a {
+    padding: 1rem 0px;
+    margin: 0 1rem;
+    display: block;
+  }
+
+  #menu li:hover {
+    background: var(--cor-p1);
+  }
+
+  #btn_mobile {
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    color: var(--cor-p1);
+    cursor: pointer;
+  }
+
+  .header-menu a:after {
+    display: none;
+  }
+  
+  .header-menu a:hover:after {
+    display: none;
+  }
+
+
+  
+  /*traços do hamburguer*/
+  #hamburguer {
+    width: 20px;
+    border-top: 2px solid;
+  }
+
+  #hamburguer::after , #hamburguer::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+  }
+
+  /*traços do hamburguer quando ativo*/
+  #nav.active #hamburguer { 
+    border-top: transparent;
+  }
+
+  #nav.active #hamburguer::before { 
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburguer::after { 
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}

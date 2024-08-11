@@ -5,8 +5,7 @@
 .introducao {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 80PX;
-  padding-bottom: 80PX;
+  padding: 60px 0;
 }
 
 .introducao-conteudo {

@@ -1,8 +1,7 @@
 .container {
   box-sizing: border-box;
   max-width: 1200px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 40px 0px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -35,5 +34,11 @@
   .botao.secundario {
     padding: 10px 20px;
     margin-right: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 15px 15px;
   }
 }

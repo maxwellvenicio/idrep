@@ -3,8 +3,7 @@
 }
 
 .clientes{
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 60px 0;
   text-align: center;
   align-items: center;
 }
@@ -17,7 +16,7 @@
   gap: 20px;
   }
 
-.clientes h1 {
+.clientes h2 {
   margin-bottom: 40px;
 }
 

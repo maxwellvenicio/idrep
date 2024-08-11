@@ -14,12 +14,15 @@
 
 <body>
   <header class="header-bg">
-    <div class="header container">
+    <div id="header" class="header container">
       <div>
-         <a href="./"><img src="imagens/LOGO.png" alt="LOGO-IDREP"></a>
+         <a id="logo" href="./"><img src="imagens/LOGO.png" alt="LOGO-IDREP"></a>
       </div>
-      <nav aria-label="primaria">
-        <ul class="header-menu">
+      <nav id="nav" aria-label="primaria">
+        <button id="btn_mobile" aria-label="Abrir Menu" aria-controls="menu" aria-haspopup="true" aria-expanded="false">
+          <span id="hamburguer"></span>
+        </button>
+        <ul id="menu" class="header-menu">
           <li><a href="./">Ponto Web</a></li>
           <li><a href="./">Relógio de Ponto</a></li>
           <li><a href="./">Catracas</a></li>
@@ -162,6 +165,7 @@
       <span>ID Rep Tecnologia 2023. Todos os direitos reservados. Politica de privacidade</span>
     </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
